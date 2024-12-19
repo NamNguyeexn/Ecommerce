@@ -1,0 +1,18 @@
+server:
+  port: 7071
+
+spring:
+  application:
+    name: identify
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+  batch:
+    job:
+      enabled: false

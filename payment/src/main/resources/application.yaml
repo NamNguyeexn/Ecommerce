@@ -1,0 +1,24 @@
+spring:
+  application:
+    api-prefix: /api/v1
+    name: payment
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+server:
+  port: 9898
+  #API
+#API_PREFIX=/api/v1
+#API_NAME=api
+#API_PORT=8080
+
+payment:
+  vnPay:
+    url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+    tmnCode: PBIN4938
+    secretKey: SNQ22FQT9P9VMNP4ZMO1A23QLNQCKG6O
+    returnUrl: http://localhost:9898/api/v1/payment/vn-pay-callback
+    version: 2.1.0
+    command: pay
+    orderType: other

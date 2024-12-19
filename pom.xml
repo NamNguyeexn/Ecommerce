@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.4</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.ex</groupId>
+	<artifactId>ecommerce</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>ecommerce</name>
+	<description>Demo project for Spring Boot</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+    <modules>
+		<module>common</module>
+		<module>logger</module>
+		<module>identify</module>
+        <module>information</module>
+		<module>product</module>
+		<module>payment</module>
+		<module>notification</module>
+	</modules>
+    <scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+		<java.version>17</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+		<project.parent.version>0.0.1-SNAPSHOT</project.parent.version>
+		<lombok.version>1.18.30</lombok.version>
+		<lombok.mapstruct.binding>0.2.0</lombok.mapstruct.binding>
+		<jjwt.version>0.11.5</jjwt.version>
+		<springdoc.version>2.1.0</springdoc.version>
+		<commons.lang3.version>3.15.0</commons.lang3.version>
+		<spring.web.version>6.1.14</spring.web.version>
+		<hibernate.version>6.5.2.Final</hibernate.version>
+		<spring-cloud.version>2023.0.2</spring-cloud.version>
+<!--	Cac thu vien bo sung	 -->
+		<xmlunit.core>2.10.0</xmlunit.core>
+		<spring.context>6.1.14</spring.context>
+		<httpcomponents.version>4.5.13</httpcomponents.version>
+		<woodstox.version>6.4.0</woodstox.version>
+		<xstream.version>1.4.20</xstream.version>
+		<guava.version>32.1.1-jre</guava.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+		</dependency>
+<!--		Duoi day la cac thu vien them vao do co thong bao lo hong ve bao mat -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${httpcomponents.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.woodstox</groupId>
+			<artifactId>woodstox-core</artifactId>
+			<version>${woodstox.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>${xstream.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+		<!--		  -->
+
+	</dependencies>
+
+</project>

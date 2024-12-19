@@ -1,0 +1,7 @@
+com/logger/services/LoggingService.class
+com/logger/LoggerApplication.class
+com/logger/adapter/CustomResponseBodyAdviceAdapter.class
+com/logger/configs/RequestLoggingFilterConfig.class
+com/logger/adapter/CustomRequestBodyAdviceAdapter.class
+com/logger/filters/CustomURLFilter.class
+com/logger/utils/GsonParserUtils.class
